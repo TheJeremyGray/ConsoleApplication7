@@ -15,6 +15,7 @@ namespace ConsoleApplication7
             {
                 var a = new Action1() {Desc = Guid.NewGuid().ToString()};
                 
+                // This audit should insert an audit with EntityId = 3 and AffectedId = {primary key of the assiciated Action1}
                 a.Audits.Add(new Audit()
                     {                     
                         NewValue = "Console!"
@@ -22,6 +23,7 @@ namespace ConsoleApplication7
 
                 context.Action1.Add(a);
 
+                // This audit should insert an audit with EntityId = 5 and AffectedId = {primary key of assiciated Action2}
                 var b = new Action1() { Desc = Guid.NewGuid().ToString() };
 
                 b.Audits.Add(new Audit()
