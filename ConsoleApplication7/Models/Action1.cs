@@ -5,13 +5,12 @@ namespace ConsoleApplication7.Models
 {
     public partial class Action1 : AuditableAction
     {
-        public override int Id { get; set; }
-        public string Desc { get; set; }
-
-        public override int GetEntityId()
+        public override int EntityId
         {
-            // this is an enum in real program :)
-            return 3;
+            get
+            {
+                return 3;
+            }
         }
     }
 }
