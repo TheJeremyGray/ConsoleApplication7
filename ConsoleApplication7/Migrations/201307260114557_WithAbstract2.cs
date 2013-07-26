@@ -3,7 +3,7 @@ namespace ConsoleApplication7.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class WithAbstract : DbMigration
+    public partial class WithAbstract2 : DbMigration
     {
         public override void Up()
         {

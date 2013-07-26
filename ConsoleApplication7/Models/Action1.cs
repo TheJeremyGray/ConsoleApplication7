@@ -5,13 +5,8 @@ namespace ConsoleApplication7.Models
 {
     public partial class Action1 : AuditableAction
     {
-        public int Id { get; set; }
+        public override int Id { get; set; }
         public string Desc { get; set; }
-
-        public override string AffectedId
-        {
-            get { return Id.ToString(); }
-        }
 
         public override int GetEntityId()
         {

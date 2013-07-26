@@ -5,13 +5,13 @@ namespace ConsoleApplication7.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class WithAbstract : IMigrationMetadata
+    public sealed partial class WithAbstract2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(WithAbstract));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(WithAbstract2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201307260108011_WithAbstract"; }
+            get { return "201307260114557_WithAbstract2"; }
         }
         
         string IMigrationMetadata.Source

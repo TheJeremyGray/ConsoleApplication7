@@ -51,9 +51,9 @@
     <Compile Include="Migrations\201307260051486_first.Designer.cs">
       <DependentUpon>201307260051486_first.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201307260108011_WithAbstract.cs" />
-    <Compile Include="Migrations\201307260108011_WithAbstract.Designer.cs">
-      <DependentUpon>201307260108011_WithAbstract.cs</DependentUpon>
+    <Compile Include="Migrations\201307260114557_WithAbstract2.cs" />
+    <Compile Include="Migrations\201307260114557_WithAbstract2.Designer.cs">
+      <DependentUpon>201307260114557_WithAbstract2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Action1.cs" />
@@ -74,8 +74,8 @@
     <EmbeddedResource Include="Migrations\201307260051486_first.resx">
       <DependentUpon>201307260051486_first.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201307260108011_WithAbstract.resx">
-      <DependentUpon>201307260108011_WithAbstract.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201307260114557_WithAbstract2.resx">
+      <DependentUpon>201307260114557_WithAbstract2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -18,12 +18,12 @@ namespace ConsoleApplication7
             this.Audits.Add(new Audit()
             {
                 EntityId = this.GetEntityId(),
-                AffectedId = this.AffectedId,
+                AffectedId = this.Id.ToString(),
                 NewValue = description
             });
         }
 
-        public abstract string AffectedId { get; }
+        public abstract int Id { get; set; }
         public abstract int GetEntityId();
     }
 }
