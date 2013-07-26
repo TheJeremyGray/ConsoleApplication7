@@ -3,10 +3,15 @@ using System.Collections.Generic;
 
 namespace ConsoleApplication7.Models
 {
-    public partial class Action2
+    public partial class Action2 : AuditableAction
     {
-        public int Id { get; set; }
-        public string Desc { get; set; }
+        public override int EntityId
+        {
+            get
+            {
+                return 5;
+            }
+        }
        
     }
 }
