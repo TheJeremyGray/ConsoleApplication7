@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditableAction.cs" />
+    <Compile Include="Migrations\201307260051486_first.cs" />
+    <Compile Include="Migrations\201307260051486_first.Designer.cs">
+      <DependentUpon>201307260051486_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201307260108011_WithAbstract.cs" />
+    <Compile Include="Migrations\201307260108011_WithAbstract.Designer.cs">
+      <DependentUpon>201307260108011_WithAbstract.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Action1.cs" />
     <Compile Include="Models\Action2.cs" />
@@ -60,6 +69,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201307260051486_first.resx">
+      <DependentUpon>201307260051486_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307260108011_WithAbstract.resx">
+      <DependentUpon>201307260108011_WithAbstract.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
