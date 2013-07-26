@@ -12,8 +12,7 @@ namespace ConsoleApplication7.Models.Mapping
 
             // Properties
             this.Property(t => t.AffectedId)
-                .IsRequired()
-                .HasMaxLength(20);
+                .IsRequired();
 
             this.Property(t => t.NewValue)
                 .HasMaxLength(5000);
@@ -25,6 +24,8 @@ namespace ConsoleApplication7.Models.Mapping
             this.Property(t => t.AffectedId).HasColumnName("AffectedId");
             this.Property(t => t.NewValue).HasColumnName("NewValue");
             
+            
+               
        }
     }
 }

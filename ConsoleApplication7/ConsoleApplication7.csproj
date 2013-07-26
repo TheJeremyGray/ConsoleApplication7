@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditableAction.cs" />
+    <Compile Include="Migrations\201307260131505_stringKeyToInt.cs" />
+    <Compile Include="Migrations\201307260131505_stringKeyToInt.Designer.cs">
+      <DependentUpon>201307260131505_stringKeyToInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201307260135395_abstractwithintid.cs" />
+    <Compile Include="Migrations\201307260135395_abstractwithintid.Designer.cs">
+      <DependentUpon>201307260135395_abstractwithintid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Action1.cs" />
     <Compile Include="Models\Action2.cs" />
@@ -58,8 +67,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201307260131505_stringKeyToInt.resx">
+      <DependentUpon>201307260131505_stringKeyToInt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307260135395_abstractwithintid.resx">
+      <DependentUpon>201307260135395_abstractwithintid.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
